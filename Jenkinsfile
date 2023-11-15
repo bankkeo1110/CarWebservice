@@ -49,10 +49,10 @@ pipeline {
 
                       // Pull the latest Docker image and run it
                     bat "docker pull $DOCKER_IMAGE"
-                    }
                 }
             }
         }
+        
 
         stage('Run Docker Container') {
             steps {
