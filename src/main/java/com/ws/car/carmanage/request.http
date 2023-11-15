@@ -1,0 +1,22 @@
+### GET Request
+GET http://localhost:8082/api/cars
+
+### POST Request
+POST http://localhost:8082/api/cars
+Content-Type: application/json
+
+{
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2020
+}
+
+### PUT Request
+PUT http://localhost:8082/api/cars/1
+Content-Type: application/json
+
+{
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2021
+}
