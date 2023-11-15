@@ -45,7 +45,7 @@ pipeline {
                 // Pulling Image from Docker Registry
                 script {
                      // First, remove the existing container if it exists
-                    bat "docker rm -f carmanage || true"
+                    bat "docker rm -f car_service_app || true"
 
                       // Pull the latest Docker image and run it
                     bat "docker pull $DOCKER_IMAGE"
