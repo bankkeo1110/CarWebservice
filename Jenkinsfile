@@ -58,7 +58,7 @@ pipeline {
             steps {
                 // Running Docker Container
                 script {
-                    bat "docker run -d --name helloworld_app -p 8083:8080 $DOCKER_IMAGE"
+                    bat "docker run -d --name car_service_app -p 8083:8080 $DOCKER_IMAGE"
                 }
             }
         }
